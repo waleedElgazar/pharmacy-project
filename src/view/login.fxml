@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="loginlayout" prefHeight="470.0" prefWidth="444.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <ImageView fitHeight="216.0" fitWidth="422.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/image.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="4.0" layoutY="258.0" prefHeight="21.0" prefWidth="103.0" text="   user name" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="305.0" prefHeight="21.0" prefWidth="84.0" text="password" textFill="RED">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password" layoutX="139.0" layoutY="300.0" promptText="enter your password" style="-fx-background-radius: 50;" />
+      <TextField fx:id="username" layoutX="139.0" layoutY="253.0" promptText="enter user name" style="-fx-background-radius: 50;" />
+      <Button layoutX="168.0" layoutY="378.0" mnemonicParsing="false" onAction="#login" style="-fx-background-radius: 50; -fx-background-color: #444;" text="Enter" textFill="RED">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
